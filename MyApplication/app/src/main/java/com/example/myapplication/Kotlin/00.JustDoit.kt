@@ -20,4 +20,12 @@ fun main() {
         println("Index is ${index}\nValue is ${it}")
         println("--------")
     }
+
+    val fixed : Int
+    var non_fixed : Int
+
+    fixed = 100
+    non_fixed = 200
+
+
 }

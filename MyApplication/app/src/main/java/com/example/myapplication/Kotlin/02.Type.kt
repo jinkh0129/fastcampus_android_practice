@@ -12,7 +12,7 @@ package com.example.myapplication.Kotlin
 var/val 변수 : 자료형 = 값
  */
 var number = 10; // 자료형을 선언하지 않아도 코틀린에서 추론을 한다.
-// 값을 할당하지 않아도 자료형을 명시해서 선언해주면 변수를 정의할 수 있다 --> 이 경우에는 var만 가능하다.(val는 변경이 안되니까)
+// 값을 할당하지 않아도 자료형을 명시해서 선언해주면 변수를 정의할 수 있다
 
 var number1 : Int = 20;
 var hello1 : String = "Hello";
