@@ -1,10 +1,10 @@
 package com.example.myapplication.Kotlin
 
 fun main(array: Array<String>) {
-    //first()
+    first()
     println(second(80))
-    //rintln(third(89))
-    //gugudan()
+    println(third(89))
+    gugudan()
 }
 
 /*
@@ -34,7 +34,20 @@ list를 2개 만든다
 구구단을 출력하자
  */
 fun first(){
-    
+    var firstList = mutableListOf<Int>()
+    for (i in 1..9){
+        firstList.add(i)
+    }
+    var secondList = mutableListOf<Boolean>()
+    for (i in firstList) {
+        if (i % 2 == 0) {
+            secondList.add(true)
+        } else {
+            secondList.add(false)
+        }
+    }
+    println(firstList)
+    println(secondList)
 }
 
 
@@ -44,5 +57,20 @@ fun second(score:Int):Unit{
         in 70..80 -> println("B")
         in 60..70 -> println("C")
         else -> println("F")
+    }
+}
+
+fun third(input:Int):Int {
+    val a : Int = input/10
+    val b : Int = input%10
+    return a+b
+}
+
+fun gugudan(){
+    for (i in 1..9){
+        for (j in 1..9){
+            print("${i*j} ")
+        }
+        println()
     }
 }
