@@ -11,24 +11,7 @@ fun main(array: Array<String>) {
     tv.switch()
     tv.channelUp()
     println(tv.checkCurrentChannel())
-    tv.channelUp()
-    println(tv.checkCurrentChannel())
-    tv.channelUp()
-    println(tv.checkCurrentChannel())
-    tv.channelUp()
-    println(tv.checkCurrentChannel())
-    tv.channelUp()
-    println(tv.checkCurrentChannel())
-    tv.channelUp()
-    println(tv.checkCurrentChannel())
-    tv.channelDown()
-    println(tv.checkCurrentChannel())
-    tv.channelDown()
-    println(tv.checkCurrentChannel())
-    tv.channelDown()
-    println(tv.checkCurrentChannel())
-    tv.channelDown()
-    println(tv.checkCurrentChannel())
+
     tv.currentChannelNumber
 
 
