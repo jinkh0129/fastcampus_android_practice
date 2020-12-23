@@ -19,13 +19,15 @@ fun main(array: Array<String>) {
     println(number100)
     test.testFun() // --> testFun에서 number100에 값을 할당한다.
     test.name   // 인스턴스의 멤버 변수에 접근하는 것이다.
-    println(number100) // 10이 나온다
+    println(number100) // 100이 나온다
 }
 
 class Test(var name : String){
     fun testFun(){
         var birth : String = "2000/03/01" // testFun의 지역변수
+        println(name)
         name="홍길동" // 지역변수(클래스 내부에서만 접근하거나, 객체생성을 통해 접근할 수 있다)
+        println(name)
         // 클래스의 프로퍼티는 클래스 내부 함수에서는 접근이 가능하다(2)
         number100 = 100 // 최상위에 선언된 변수는 어디서든 접근이 가능하다.
         fun testFun3(){
