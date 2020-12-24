@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d4e2d4">
+        <!--배경같은 경우는 width를 match_parent로 설정해야 양 옆에 꽉찬다-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="128dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="12sp"
+            android:text="웹 코딩의 기본"
+            android:textColor="#060606"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+            <!--텍스트뷰의 경우에는 가운데로 보내고 싶을 때는 centerHorizontal을 사용한다.
+            layout_gravity는 자신의 위치를 부모(주로 레이아웃)를 기준으로 배치할 위치를 결정(주로 위젯에 지정)
+            gravity는 자신의 안에 소속된 위젯들의 배치를 결정한다. 주로 레이아웃에 설정한다.(버튼 내의 텍스트 위치 변경 시에도 사용)
+            lineSpacingExtra는 줄간격을 의미한다.-->
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="172dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="배우기 쉽고, 결과물이 눈에 보이는 앱 제작\n기본
+언어 3대장은 앱 디자이너에게 최적화된 언어임"
+            android:textColor="#060606"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+        <!--모든 에뮬에서 깨지지않기 위해서는 마진으로 상하좌우를 다 줘야하는건가-->
+
+        <ImageView
+            android:layout_width="277dp"
+            android:layout_height="407dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/radius" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="467dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="9sp"
+            android:text="CSS"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="496dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="CSS는 디자인을 입힐 때 사용하는\n언어예요. 레이아웃을 잡거나\n사이즈, 컬러 등을 정할 수 있어요."
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="591dp"
+            android:src="@drawable/radius2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="600dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:text="자세히 보기"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="312dp"
+            android:src="@drawable/youtube_logo" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
