@@ -3,32 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
-        
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="#ff0057"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#ffffff"/>
+            android:background="#ff0057" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#da00ff"/>
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#da00ff" />
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -39,22 +40,22 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#008EFF"/>
+            android:background="#008EFF" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#00FF0A"/>
+            android:background="#00FF0A" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#FFE500"/>
+            android:background="#FFE500" />
 
     </LinearLayout>
-    
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -65,19 +66,19 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#5C00FF"/>
+            android:background="#5C00FF" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#FFE500"/>
+            android:background="#FFE500" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="#00FFCC"/>
+            android:background="#00FFCC" />
 
 
     </LinearLayout>
