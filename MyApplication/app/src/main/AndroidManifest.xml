@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Listener">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        // listener라는 액티비티를 생성하니 어플의 지도라고 할 수 있는 manifest파일에 생겼다.
+
+
+
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
