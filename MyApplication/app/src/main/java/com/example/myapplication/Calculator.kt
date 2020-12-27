@@ -54,8 +54,19 @@ class Calculator : AppCompatActivity() {
         }
 
 
-        cancel.setOnClickListener {  }
-        plus.setOnClickListener {  }
+        cancel.setOnClickListener {
+            var new = "0"
+            var old = "0"
+            result.setText(old)
+        }
+        plus.setOnClickListener {
+            old = (old.toInt() + new.toInt()).toString()
+            // old와 new는 String형이므로 더할 때는 Int로 바꿔서 더해야 한다.
+            new = "0"
+            // 다음 수를 받을 수 있도록
+            result.setText(old)
+            // result라는 아이디를 가진 뷰(텍스트뷰)에 old를 표시하도록 함
+        }
 
     }
 

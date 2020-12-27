@@ -1,0 +1,4 @@
+
+04. Context
+- 문맥
+- activity가 가지고 있는 주변 정보
