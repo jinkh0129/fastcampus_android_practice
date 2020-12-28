@@ -7,13 +7,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_one.*
 
 // 여기에 Fragment를 만드는 것이다.
 
 class FragmentOne : Fragment(){ // 상속이니까 () 열어줘야한다
+    // 직접 리스너를 구현하는 방법
+    interface OnDataPassListener {
+        fun onDataPass(data : String?)
+    }
+    lateinit var dataPassListener : OnDataPassListener
+
     override fun onAttach(context: Context) {
         Log.d("Life_cycle","F onAttach")
         super.onAttach(context)
+        dataPassListener = context as OnDataPassListener // 형변환을 해준다.(casting)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,11 +46,19 @@ class FragmentOne : Fragment(){ // 상속이니까 () 열어줘야한다
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d("Life_cycle","F onViewCreated")
         super.onViewCreated(view, savedInstanceState)
+
+        // Activity는 onCreate에서 작업을 주로하고, Fragment는 onViewCreated에서 주로 작업을 한다.
+        pass.setOnClickListener {
+            dataPassListener.onDataPass("Good Bye") // 리스너를 장착함
+        }
+        // 보내는 역할 받는 것은 Activity에서
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("Life_cycle","F onActivityCreated")
         super.onActivityCreated(savedInstanceState)
+        val data = arguments?.getString("hello")
+        Log.d("data", data.toString())
     }
 
     override fun onStart() {

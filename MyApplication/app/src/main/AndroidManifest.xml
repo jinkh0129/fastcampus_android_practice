@@ -8,18 +8,21 @@
         android:label="My Application"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
-        <activity android:name=".FragmentActivity">
+        android:theme="@style/AppTheme">
+        <activity android:name=".Context">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OpenInternet">
+        <activity android:name=".Resource">
 
         </activity>
-        <activity android:name=".openUrl"></activity>
+        <activity android:name=".NullSafety" />
+        <activity android:name=".FragmentActivity" />
+        <activity android:name=".OpenInternet" />
+        <activity android:name=".openUrl" />
         <activity android:name=".Intent02" />
         <activity android:name=".Intent01" />
         <activity android:name=".Calculator" />

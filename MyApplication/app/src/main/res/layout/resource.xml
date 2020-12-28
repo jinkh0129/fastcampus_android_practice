@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/textview_color"
+        android:text="@string/hello" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/textview_color"
+        android:text="@string/hello" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/textview_color"
+        android:text="@string/hello" />
+
+    <!-- textView는 모두 동일하게 background를 지정해줬는데 만약 color를 바꿔야한다면
+    values에 있는 colors.xml파일에 name을 지정해서 관리를 편하게 할 수 있다-->
+    <!-- 이와 동일한 방법으로 String도 관리할 수 있다-->
+
+</LinearLayout>

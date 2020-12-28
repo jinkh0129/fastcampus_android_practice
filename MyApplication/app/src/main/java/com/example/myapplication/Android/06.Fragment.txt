@@ -22,3 +22,12 @@
 - LifeCycle이 존재한다.
 - Fragment의 LifeCycle은 Activity에 종속적이다. 즉, Activity가 종료되면 Fragment도 종료된다.
     --> Fragment의 LifeCycle도 관리를 해줘야한다...(문제를 해결하기 위해 또 다른 문제가 생긴 느낌;;)
+
+- 사용방법
+    --> XML에 ViewComponent로 추가
+    --> 코드로(동적으로) 추가
+
+- 데이터 전달 방법
+    --> Activity에서 Fragment로 : argument와 bundle
+    --> Fragment에서 Activity로 : 자체 구현 필요(Listener 구현)
+        --> interface로 구현해야 한다.
