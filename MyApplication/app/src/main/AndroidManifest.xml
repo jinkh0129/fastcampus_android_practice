@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    <!-- Library 실습 중에서 이미지가 인터넷접근 문제로 안넘어올 때 이 줄을 써주면 된다. -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,17 +10,20 @@
         android:label="My Application"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Context">
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".AddViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Resource">
+        <activity android:name=".LibraryActivity">
 
         </activity>
+        <activity android:name=".ThreadActivity"></activity>
+        <activity android:name=".Context" />
+        <activity android:name=".Resource" />
         <activity android:name=".NullSafety" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".OpenInternet" />

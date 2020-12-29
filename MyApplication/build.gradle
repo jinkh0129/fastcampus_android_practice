@@ -18,6 +18,9 @@ allprojects {
     repositories {
         google()
         jcenter()
+        // glide 라이브러리를 가져왔다. -->Project/Module gradle에 적을 것을 다 적었으면 Sync Now를 눌러준다.
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
     }
 }
 
