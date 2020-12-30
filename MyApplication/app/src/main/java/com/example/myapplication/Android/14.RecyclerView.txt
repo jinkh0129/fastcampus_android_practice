@@ -1,0 +1,13 @@
+
+
+
+14. RecyclerView
+- 장점
+    --> ListView의 개선판
+        --> ViewHolder 포함
+
+    --> 유연하다(ex. 수평 스크롤도 손쉽게 가능하다)
+        --> LayoutManager
+            - Linear : 수직/수평 스크롤
+            - Glide : 바둑판
+            - StaggeredGrid : 불규칙적인 바둑판
