@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.colortest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".MyViewPager2IntroSlide"></activity>
+        <!-- 메인 Activity -->
+        <activity android:name=".MainActivity">
+
+            <!-- intent-filter가 들어가있으면 여러 화면 중에서 먼저 시작한다 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 코틀린파일로 class를 만들고 AppCompatActivity를 상속받으면 여기에 등록을 해줘야한다 -->
+        <activity android:name=".SplashActivity"></activity>
+    </application>
+
+</manifest>
