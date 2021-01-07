@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/money"
+            android:icon="@drawable/ic_baseline_attach_money_24"
+            android:title="접근성" />
+        <item
+            android:id="@+id/atm"
+            android:icon="@drawable/ic_baseline_atm_24"
+            android:title="인출기" />
+        <item
+            android:id="@+id/sledding"
+            android:icon="@drawable/ic_baseline_sledding_24"
+            android:title="썰매" />
+    </group>
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C061F"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ChooseUrlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/naver_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/click_btn"
+            android:clickable="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="네이버"
+            android:textColor="#222831"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/daum_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_btn"
+            android:clickable="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="다음"
+            android:textColor="#222831"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/youtube_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/click_btn"
+            android:clickable="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="유튜브"
+            android:textColor="#222831"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/google_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/click_btn"
+            android:clickable="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="구글"
+            android:textColor="#222831"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+</LinearLayout>

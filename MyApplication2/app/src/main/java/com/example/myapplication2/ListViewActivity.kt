@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_list_view.*
-import org.w3c.dom.Text
 
 class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,8 +59,8 @@ class ListViewAdapter(
             view = layoutInflater.inflate(R.layout.item_view, null)
             holder = ViewHolder()
 
-            holder.raceName = view.findViewById(R.id.race_name)
-            holder.raceRank = view.findViewById(R.id.race_rank)
+            holder.raceName = view.findViewById(R.id.car_name)
+            holder.raceRank = view.findViewById(R.id.car_engine)
             view.tag = holder
         } else {
             holder = convertView.tag as ViewHolder

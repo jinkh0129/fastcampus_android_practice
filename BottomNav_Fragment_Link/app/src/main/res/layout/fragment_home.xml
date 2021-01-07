@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:paddingStart="15sp"
+            android:text="@string/main_title"
+            android:textColor="@color/main_title"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingVertical="12dp">
+
+            <ImageView
+                android:id="@+id/whale_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/whale" />
+
+            <TextView
+                android:id="@+id/whale_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whale"
+                android:textColor="@color/main_title"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="고래는 포유강 고래목에 속하는 동물을 통칭한다.고래는 다시 크게 수염고래아목과 이빨고래아목으로 나눌 수 있다. 수염고래아목에 속하는 고래는 긴 수염이 달려있어서 물을 빨아들이고 난 후 수염으로 거른 플랑크톤을 섭취하며, 이빨고래아목에 속하는 고래는 종류에 따라 작은 어류에서부터 큰 포유동물에 이르기까지 사냥해서 잡아먹는 특징이 있다. 고래목에는 현재까지 총 90여 종이 알려져있다."
+                android:textColor="@color/main_title"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/whale_btn"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#9DAB86"
+                android:text="고래 보러가기"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

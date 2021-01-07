@@ -37,8 +37,8 @@ class AddViewOwnPracticeActivity : AppCompatActivity() {
             val itemView = inflater.inflate(R.layout.item_view,null)
             // 준비한 인플레이터로 아이템 1개에 해당하는 뷰를 만들어 준다.
 
-            val nameView = itemView.findViewById<TextView>(R.id.race_name)
-            val rankView = itemView.findViewById<TextView>(R.id.race_rank)
+            val nameView = itemView.findViewById<TextView>(R.id.car_name)
+            val rankView = itemView.findViewById<TextView>(R.id.car_engine)
             nameView.setText(rankList.get(i).name)
             rankView.setText(rankList.get(i).rank)
             // 아이템 1개에 해당하는 뷰에 값을 넣어준다.

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@color/outerBox"
     android:orientation="vertical"
-    android:padding="6dp">
+    android:padding="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,14 +14,14 @@
         android:weightSum="2">
 
         <TextView
-            android:id="@+id/race_name"
+            android:id="@+id/car_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:textColor="#000000"
-            android:textSize="30sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:layout_width="1dp"
@@ -29,14 +29,14 @@
             android:background="#000000" />
 
         <TextView
-            android:id="@+id/race_rank"
+            android:id="@+id/car_engine"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:textColor="#000000"
-            android:textSize="30sp" />
+            android:textSize="15sp" />
     </LinearLayout>
 
     <LinearLayout

@@ -10,13 +10,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNav.setOnNavigationItemSelectedListener(navListener)
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment())
-            .commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, HomeFragment()).commit()
     }
 
-    private val navListener =
+    val navListener =
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             var selectedFragment: Fragment? = null
             when (item.itemId) {
@@ -26,10 +26,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_news -> selectedFragment = NewsFragment()
                 R.id.nav_profile -> selectedFragment = ProfileFragment()
             }
-            supportFragmentManager.beginTransaction().replace(
-                R.id.fragment_container,
-                selectedFragment!!
-            ).commit()
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container,selectedFragment!!).commit()
             true
         }
 }

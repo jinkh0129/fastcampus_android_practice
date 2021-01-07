@@ -1,6 +1,5 @@
 package com.example.webscrappingwithkotlin
 
-import android.content.ClipData
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
@@ -22,7 +21,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_list.view.*
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import org.jsoup.nodes.Element
 import org.jsoup.select.Elements
 
 class MainActivity : AppCompatActivity() {
@@ -89,7 +87,7 @@ class Myadapter(val items : ArrayList<MainActivity.Item>, val context : Context)
                 .load(items.get(position).thumb)
                 .centerCrop()
                 .placeholder(android.R.drawable.stat_sys_upload)
-                .into(holder.itemView.iv_thumb)
+                .into(holder.itemView.tv_thumb)
 
         holder.itemView.setOnClickListener {
             Toast.makeText(context,"Clicked: ${items.get(position).title}",Toast.LENGTH_LONG).show()
