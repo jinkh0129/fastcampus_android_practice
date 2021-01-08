@@ -14,13 +14,15 @@
         <activity android:name=".MainActivity">
 
             <!-- intent-filter가 들어가있으면 여러 화면 중에서 먼저 시작한다 -->
+
+        </activity> <!-- 코틀린파일로 class를 만들고 AppCompatActivity를 상속받으면 여기에 등록을 해줘야한다 -->
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- 코틀린파일로 class를 만들고 AppCompatActivity를 상속받으면 여기에 등록을 해줘야한다 -->
-        <activity android:name=".SplashActivity"></activity>
+        </activity>
     </application>
 
 </manifest>

@@ -11,16 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".asdasd"></activity>
-        <activity android:name=".Design">
+        <activity android:name=".AsyncTaskActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SharedPreference">
+
+        </activity>
+        <activity android:name=".asdasd" />
+        <activity android:name=".Design" />
         <activity android:name=".practice02" />
-        <activity android:name=".practice01"></activity>
+        <activity android:name=".practice01" />
         <activity android:name=".TabPagerActivity" />
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />

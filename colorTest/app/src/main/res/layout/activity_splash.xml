@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00225a"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
@@ -13,14 +14,16 @@
         android:layout_gravity="center"
         android:text="안녕하세요"
         android:textColor="#000000"
-        android:textSize="50dp" />
+        android:textSize="50dp"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/turtle_logo"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:src="@drawable/main_icon"
-        android:visibility="invisible" />
+        android:visibility="visible" />
 
-</FrameLayout>
+</RelativeLayout>
